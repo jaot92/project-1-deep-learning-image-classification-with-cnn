@@ -5,7 +5,7 @@ from tensorflow.keras.models import load_model
 import numpy as np
 
 app = Flask(__name__)
-model = load_model('best_model.keras')  # Usar el nuevo formato .keras
+model = load_model('/saved_model/img-class-cnn-fine.keras')  # Usar el nuevo formato .keras
 
 @app.route('/predict', methods=['POST'])
 def predict():
